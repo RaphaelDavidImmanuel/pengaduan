@@ -40,6 +40,16 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+
+        'masyarakat' => [
+            'driver' => 'session',
+            'provider' => 'masyarakats',
+        ],
+
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
+        ],
     ],
 
     /*
@@ -63,6 +73,16 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
+        ],
+
+        'masyarakats' => [
+            'driver' => 'eloquent',
+            'model' => \App\Models\Masyarakat::class,
+        ],
+
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => \App\Models\Petugas::class,
         ],
 
         // 'users' => [
